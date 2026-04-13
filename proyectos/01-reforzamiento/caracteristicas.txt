@@ -1,0 +1,16 @@
+$ npm create vite
+
+> npx
+> create-vite
+
+|
+o  Project name:
+|  01_reforzamiento
+|
+o  Select a framework:
+|  Vanilla
+|
+*  Select a variant:
+|  > TypeScript
+|    JavaScript
+—
