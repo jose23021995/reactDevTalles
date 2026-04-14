@@ -1,8 +1,9 @@
 import './style.css'
+import "./bases/01-const-let"
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 <div>
-  <h1>hola mundo en react.js!</h1>
+  <h1>Hola mundo en react.js!</h1>
 </div>
 `
 
