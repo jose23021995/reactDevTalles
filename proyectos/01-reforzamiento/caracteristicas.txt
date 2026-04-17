@@ -14,3 +14,8 @@ o  Select a framework:
 |  > TypeScript
 |    JavaScript
 —
+
+
+
+npm install
+npm run dev
