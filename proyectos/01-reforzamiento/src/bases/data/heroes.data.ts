@@ -1,41 +1,46 @@
-//type Owner='DC'| 'Marvel'
+type Owner='DC'| 'Marvel'
 //ternario
-enum Owner{
-    DC="DC", //0
-    Marvel="Marvel" //1
-}
+// enum Owner{
+//     DC="DC", //0
+//     Marvel="Marvel" //1
+// }
 
-interface Hero{
+
+export interface Hero{
     id: number;
     name: string;
     owner: Owner;
 }
 
 
-const heroes:Hero[] = [
+export const heroes:Hero[] = [
   {
     id: 1,
     name: 'Batman',
-    owner:Owner.DC,
+    owner:"DC",
   },
   {
     id: 2,
     name: 'Spiderman',
-    owner: Owner.Marvel,
+    owner: "Marvel",
   },
   {
     id: 3,
     name: 'Superman',
-    owner: Owner.DC,
+    owner: "Marvel",
   },
   {
     id: 4,
     name: 'Flash',
-    owner: Owner.DC,
+    owner: "DC",
   },
   {
     id: 5,
     name: 'Wolverine',
-    owner: Owner.Marvel,
+    owner: "Marvel",
   },
 ];
+
+//exportacion por defecto
+//export default heroes;
+//Owner ==> Dueño | no es una funcion

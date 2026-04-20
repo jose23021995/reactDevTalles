@@ -9,3 +9,5 @@ console.log({myArray,myArray2});
 // for(const myNumber of myArray){
 //     console.log(myNumber+10);
 // }
+
+// push ==> empujar

@@ -49,3 +49,5 @@ myNumber.forEach(function(value){console.log({value});})
 myNumber.forEach((value)=>console.log({value}))
 
 myNumber.forEach(console.log)
+
+//greet ==> saludar | no es una funcion
