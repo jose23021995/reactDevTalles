@@ -1,6 +1,6 @@
 //importaciones
 
-import {heroes, heroes as misSuperHeroesFavoritos,type Hero} from "./data/heroes.data"
+import {heroes, heroes as misSuperHeroesFavoritos,type Hero,Owner} from "./data/heroes.data"
 
 const getHeroById=(id:number):Hero|undefined=>{
     //que hace
@@ -21,3 +21,7 @@ console.log(getHeroById(7))
 // find ==> encontrar
 // trow ==> tirar 
 // as ==> como
+
+export const getHeroesByOwner= (owner:Owner)=>{
+    
+}

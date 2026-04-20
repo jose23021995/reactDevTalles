@@ -1,10 +1,11 @@
-type Owner='DC'| 'Marvel'
-//ternario
-// enum Owner{
-//     DC="DC", //0
-//     Marvel="Marvel" //1
-// }
+//type Owner='DC'| 'Marvel'
 
+export  const Owner ={
+    DC: "DC",
+    Marvel: "Marvel"
+} as const;
+
+export type Owner = typeof Owner[keyof typeof Owner];
 
 export interface Hero{
     id: number;
@@ -17,27 +18,27 @@ export const heroes:Hero[] = [
   {
     id: 1,
     name: 'Batman',
-    owner:"DC",
+    owner:Owner.DC,
   },
   {
     id: 2,
     name: 'Spiderman',
-    owner: "Marvel",
+    owner: Owner.Marvel,
   },
   {
     id: 3,
     name: 'Superman',
-    owner: "Marvel",
+    owner: Owner.Marvel,
   },
   {
     id: 4,
     name: 'Flash',
-    owner: "DC",
+    owner: Owner.DC,
   },
   {
     id: 5,
     name: 'Wolverine',
-    owner: "Marvel",
+    owner: Owner.Marvel,
   },
 ];
 
