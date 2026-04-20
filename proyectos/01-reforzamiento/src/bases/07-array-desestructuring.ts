@@ -8,3 +8,15 @@ const returnArrayFn=()=>{
 
 const[letras,numeros]=returnArrayFn();
 console.log(numeros+200);
+
+const useState= (setName:string)=>{
+    return{
+        name:"Goku",
+        setName:setName
+    }
+}
+
+
+const [name, setName] = useState('Goku');
+console.log(name);       // Goku
+setName('Vegeta');       // Imprime "Vegeta"
